@@ -1,0 +1,40 @@
+node-global-prefix (3.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto test & install
+  * New upstream version 3.0.0
+  * Update copyright
+  * Drop patch, now included in upstream
+  * Dependencies:
+    + Remove node-expand-tilde and node-is-windows
+    + Add node-kind-of
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 09 Dec 2020 18:01:41 +0100
+
+node-global-prefix (1.0.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 24 Jan 2018 17:08:53 +0530
+
+node-global-prefix (0.1.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #842470)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 29 Oct 2016 20:04:29 +0530
