@@ -1,3 +1,21 @@
+node-global-prefix (3.0.0+~3.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-ini and node-which.
+    + node-global-prefix: Drop versioned constraint on node-ini and node-which
+      in Depends.
+  * Remove empty leading paragraph in Description.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix debian/watch
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Dec 2021 18:43:55 +0100
+
 node-global-prefix (3.0.0-1) unstable; urgency=medium
 
   * Team upload
