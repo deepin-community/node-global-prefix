@@ -1,5 +1,10 @@
 version=4
 opts=\
 dversionmangle=auto,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-global-prefix-$1.tar.gz/ \
- https://github.com/jonschlinkert/global-prefix/tags .*/archive/v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-global-prefix-$1/ \
+ https://github.com/jonschlinkert/global-prefix/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-global-prefix,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-global-prefix-$1/" \
+ https://registry.npmjs.org/@types/global-prefix https://registry.npmjs.org/@types/global-prefix/-/global-prefix-([\d\.]+)@ARCHIVE_EXT@ group
